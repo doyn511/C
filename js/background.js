@@ -6,6 +6,7 @@ const chosenImage = images[Math.floor(Math.random() *images.length)];
 const bgImage = document.createElement("img");
 
 bgImage.src = `img/${chosenImage}`;
+bgImage.id = "bgImage";
 
 //body에 img 태그를 추가하기 위해 appendChild() 사용
 document.body.appendChild(bgImage);

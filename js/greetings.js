@@ -12,7 +12,6 @@ function onLoginSubmit(event){
   const username = loginInput.value;
   localStorage.setItem(USERNAME_KEY, username); //웹브라우저가 데이터를 기억하도록 만듦
   paintGreetings(username);
-  console.log(username);
 }
 
 function paintGreetings(username){

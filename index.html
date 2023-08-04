@@ -8,9 +8,15 @@
   <title>Momentum</title>
 </head>
 <body>
+  <div id="weather">
+    <span></span>
+    <span></span>
+  </div>
+  <h1 id="clock">00:00:00</h1>
   <form class="hidden", id="login-form">
     <!-- input 유효성 검사를 시키기 위해서는 input이 form 내부에 위치해야함 -->
     <input 
+      id="text-input"
       required 
       maxlength="15" 
       type="text" 
@@ -18,19 +24,14 @@
       <!-- form 내부에서 엔터 혹은 submit 버튼을 누르면 자동으로 submit 됨
       -> 더이상 click을 신경쓰지 않아도 됨 
       but form이 submit 될 때마다 페이지가 새로고침 됨-->
-    <input type="submit" value="login">
+    <input type="submit" value="login" id="button">
   </form>
-  <h2 id="clock">00:00:00</h2>
-  <h1 id="greeting" class="hidden"></h1>
+  <h2 id="greeting" class="hidden"></h2>
   <form id="todo-form">
     <input type="text" placeholder="Write a To Do and Press Enter.">
   </form>
   <ul id="todo-list"></ul>
   <div id="quote">
-    <span></span>
-    <span></span>
-  </div>
-  <div id="weather">
     <span></span>
     <span></span>
   </div>
